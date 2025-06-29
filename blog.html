@@ -25,7 +25,7 @@
   color: rgb(247, 231, 224);
 }
 body {
-    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(Gingham-Doeskin-white-359-2.webp);
+  background-color: #1f364e;
     height: 200vh;
     background-size: contain;
     margin: 0;
@@ -44,49 +44,74 @@ span {
     font-family: "Sofia";
     color: #b6c8a5;
 }
-ul {
+ul.topnav {
+  border-bottom: 3px solid rgb(247, 231, 224);
+    border-top: 3px solid rgb(247, 231, 224);
+    background-color: #1f364e;
     list-style-type: none;
     overflow: hidden;
     font-size: 30px;
     margin: 0;
     padding: 0;
+    ;
+    
 }
-li {
-    float: left;
+ul.topnav li {
+    float: none;
+    width: 100%;
+    position: relative;
+
 }
-li a {
+ul.topnav li a {
     display: block;
     color: whitesmoke;
     text-align: center;
     padding: 25px 30px;
     text-decoration: none;
 }
+@media screen and (max-width: 700px) {
+  ul.topnav {
+    width: 100%;
+    height: auto;
+    position: relative;
+  }
+}
+@media screen and (min-width: 701px) {
+  ul.topnav li {
+    width: auto;
+    float: left;
+  }
+}
 
 li a:hover {
-    background-color: #2e2e30;
+    background-color: #16293e;
 }
 .active
 {
-    background-color: #b6c8a5;
+    background-color: #16293e;
+}
+ul {
+  font-size: 30px;
 }
 </style>
 </head>
 <body>
-    <ul style="background-color: #2e2e30">  <li><a class="active" href="#home">Home Page</a></li> <li><a href="index.html">Book Reviews!</a></li> </ul>
+    <ul class="topnav">  
+      <li><a class="active" href="#home">Home Page</a></li> <li><a href="index.html">Book Reviews!</a></li> </ul>
     <div class="hero-image">
         <div class="hero-text">
             <h1 style="font-size: 100px;">Welcome</h1>
             <h3>to my blog</h3>
         </div>
     </div>
-  <h3>Hi! i'm <span>frog</span> and this is my blog, entirely coded by me (badly), made for the Athena Award.</h3>
+  <h3>Hi! i'm <span>frog</span> and this is my blog made for the Athena Award.</h3>
      <h3>i like to:</h3>
      <ul>➼ code</ul>
      <ul>➼ draw</ul>
      <ul>➼ read</ul>
      <ul>➼ crochet (slowly)</ul>
-     <ul>➼ sleep (in the morning)</ul>
-     <ul>➼ play video games (spiritfarer! slimerancher! moonglow bay! forza horizon!)</ul>
+     <ul>➼ sleep</ul>
+     <ul>➼ play video games (spiritfarer! slimerancher! moonglow bay! forza horizon! splatoon! zelda botw!)</ul>
 
 </body>
 </html>
