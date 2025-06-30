@@ -54,9 +54,16 @@ ul {
     background-color: #1f364e;
     border-bottom: 3px solid rgb(247, 231, 224);
     border-top: 3px solid rgb(247, 231, 224);
+    border-radius: 10px;
 }
 li {
     float: left;
+}
+ul li {
+    float: none;
+    width: 100%;
+    position: relative;
+
 }
 li a {
     display: block;
@@ -65,7 +72,20 @@ li a {
     padding: 25px 30px;
     text-decoration: none;
 }
+@media screen and (max-width: 700px) {
+  ul {
+    width: 100%;
+    height: auto;
+    position: relative;
+  }
 
+}
+@media screen and (min-width: 701px) {
+  ul li {
+    width: auto;
+    float: left;
+  }
+}
 li a:hover {
     background-color: #16293e;
 }
@@ -98,6 +118,10 @@ h4 {
     font-size: 20px;
     font-weight: normal;
 }
+h5 {
+    font-size: 20px;
+    font-weight: normal;
+}
 </style>
 <title>fantasy genre</title>
 </head>
@@ -106,15 +130,16 @@ h4 {
     <li><a href="index.html">Book Reviews</a></li>
     <li><a class="active" href="#home">Fantasy genre</a></li>
     <li><a href="sci.html">Science fiction genre</a></li>
+    <li><a href="blog.html">Home Page</a></li>
 </ul>
 <h1>fantasy genre</h1>
+<h5>note: ratings are out of five.</h4>
 <div class="sticky">
 <h2><em>music!🎵</em></h2>
 <audio controls autoplay loop>
 <source src="Flowers of Osaka.mp3" type="audio/mpeg" alt="Music">
 </audio>
 </div>
-<h4>note: ratings are out of five.</h4>
 <div><h3>The inheritance cycle</h3>
 <img src="book-series-inheritance-cycle.png" height="419" width="700" alt="image of books">
 <p>Rating:⭐⭐⭐⭐⭐</p>
