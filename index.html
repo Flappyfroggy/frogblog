@@ -55,9 +55,12 @@ ul {
     margin-bottom: 40px;
     border-top: 3px solid rgb(247, 231, 224);
     border-bottom: 3px solid rgb(247, 231, 224);
+    border-radius: 10px;
 }
 li {
     float: left;
+    width: 100%;
+    position: relative;
 }
 li a {
     display: block;
@@ -66,7 +69,20 @@ li a {
     padding: 25px 30px;
     text-decoration: none;
 }
+@media screen and (max-width: 700px) {
+  ul {
+    width: 100%;
+    height: auto;
+    position: relative;
+  }
 
+}
+@media screen and (min-width: 701px) {
+  ul li {
+    width: auto;
+    float: left;
+  }
+}
 li a:hover {
     background-color: #16293e;
 }
@@ -103,6 +119,7 @@ audio {
     <li><a class="active" href="#home">Book Reviews</a></li>
     <li><a href="fantasy.html">Fantasy genre</a></li>
     <li><a href="sci.html">Science Fiction genre</a></li>
+    <li><a href="blog.html">Home Page</a></li>
 </ul>
 <title>Book Review Home Page</title>
 <div class=sticky>
